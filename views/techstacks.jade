@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= title
+    p TechStacks technologies
+    ul
+        each val in technologies
+            li
+                a(href=val.VendorUrl,title=val.VendorName)=val.Name
+
